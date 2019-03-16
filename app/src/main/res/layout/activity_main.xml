@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mambobryan.day3.MainActivity">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/user_choice_text_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instructions" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:textSize="48sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/user_choice_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="@string/none" />
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Spinner
+            android:padding="8dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/main_activity_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/activity_buttons"
+        android:layout_marginBottom="16dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showUserSelection"
+        android:text="SELECT" />
+
+
+</RelativeLayout>
