@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Day 3</string>
+    <string name="instructions">Here is your choice</string>
+    <string name="none">None</string>
+    <string-array name="level">
+        <item> </item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>World-class</item>
+        <item>Legendary</item>
+    </string-array>
+</resources>
